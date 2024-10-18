@@ -4,16 +4,15 @@
         <attribute name="name" value="M01"/>
         <attribute name="authors" value="USER"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-18 11:27:00 AM"/>
-        <attribute name="created" value="VVNFUjtMQVBUT1AtNjAzQUdCR1U7MjAyNC0xMC0xODsxMToxOTowNCBBTTsyNjAy"/>
-        <attribute name="edited" value="VVNFUjtMQVBUT1AtNjAzQUdCR1U7MjAyNC0xMC0xODsxMToxOToxMyBBTTsxO0ZyYW5rIE5pcm95O0ZSQU5LOzIwMjMtMTAtMTY7MDEuMDguMzIgUE07TTAxLmZwcmc7NjE1Nw=="/>
-        <attribute name="edited" value="VVNFUjtMQVBUT1AtNjAzQUdCR1U7MjAyNC0xMC0xODsxMToyNzowMCBBTTsxOzI3MDU="/>
+        <attribute name="saved" value="2024-10-18 10:57:17 AM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtNjAzQUdCR1U7MjAyNC0xMC0xODsxMDo0MDoyMCBBTTsyNTkz"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtNjAzQUdCR1U7MjAyNC0xMC0xODsxMDo1NzoxNyBBTTsxOzI3MTU="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="Performa, NilaiHuruf, TotalKredit, A, AB, B, BC, C, D, E" type="Real" array="False" size=""/>
-            <declare name="NilaiAngka, Kredit" type="String" array="False" size=""/>
+            <declare name="Performa, TotalKredit, NilaiAngka, A, AB, B, BC, C, D, E" type="Real" array="False" size=""/>
+            <declare name="NilaiHuruf, Kredit" type="String" array="False" size=""/>
             <assign variable="TotalKredit" expression="4.0"/>
             <input variable="Kredit"/>
             <if expression="Kredit = &quot;---&quot;">
@@ -76,7 +75,7 @@
                         </if>
                     </else>
                 </if>
-                <assign variable="Performa" expression="(TotalKredit * NilaiAngka)"/>
+                <assign variable="Performa" expression="TotalKredit*NilaiAngka"/>
                 <output expression="toFixed(Performa,1)" newline="True"/>
                 <input variable="Kredit"/>
                 <if expression="Kredit = &quot;---&quot;">
